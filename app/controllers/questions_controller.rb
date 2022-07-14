@@ -12,6 +12,7 @@ class QuestionsController < ApplicationController
       end  
     #   @test = params
     end
+
 end
 
     

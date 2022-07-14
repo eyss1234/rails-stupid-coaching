@@ -1,11 +1,16 @@
-<h1>Stupid Coaching<h1>
-<div class="question">
-<%=params[:question]%>
-<h2>-you<h2>
+<h1 class="display-6 mt-5">Stupid Coaching<h1>
+<div class="question mt-5 h4 border-start border-5">
+  <div class="p-3">
+    <%=params[:question]%>
+    <p class="mt-3 h6">-you</p>
+  </div>
 </div>
-<br>
-<div class="answer">
-<%=@test%>
-<h2>-coach<h2>
+<div class="answer mt-4 h4 border-start border-5 bg-light">
+  <div class="p-3">
+    <%=@test%>
+    <p class="mt-3 h6">-coach</p>
+  </div>
 </div>
-<%= link_to "Ask another question", ask_path %>
+<div class="mt-4 h6">
+  <%= link_to "Ask another question", ask_path %>
+</div>
